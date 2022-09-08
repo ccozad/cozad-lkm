@@ -21,9 +21,24 @@ Follow the instructions on [How to install Ubuntu Desktop](https://ubuntu.com/tu
 ## Install tools
 
  - For simplified editing we'll use Visual Studio code for all of our exercises. The Ubuntu Store should have a Visual Studio available as a one click install
- - Ubuntu has a program called "Terminal". Click the icon in the left corner to access installed applications. Commands are listed in this type of formatting `<type this command into the terminal`
- - You need tools to compile kernel modules `sudo apt-get install build-essential kmod`
- - You will also need headers for your kernel `sudo apt-get update` then `apt-cache search linux-headers-```uname -r````
+ - Ubuntu has a program called "Terminal". Click the icon in the left corner to access installed applications. Commands are listed in this type of formatting 
+ ```
+ <type this command into the terminal>
+ ```
+ - You need tools to compile kernel modules 
+ ```sh
+ sudo apt-get install build-essential kmod
+ ```
+ - You will also need headers for your kernel 
+ ```
+ sudo apt-get update
+ ``` 
+ 
+ then 
+ 
+ ```sh
+ apt-cache search linux-headers-`uname -r`
+ ```
  - You will also need git to retrieve the samples and version your work `sudo apt install git`
  
 # Organization
@@ -45,3 +60,7 @@ I remember my first time learning low level Linux development. The instructor sp
 
 ## I found an error, what do I do?
 File a bug or submit a pull request
+
+# License
+ - GPL-3.0
+ - [LICENSE](LICENSE) or [https://opensource.org/licenses/GPL-3.0](https://opensource.org/licenses/GPL-3.0)
